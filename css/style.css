@@ -20,13 +20,20 @@ body {
 }
 /*------------------------------------ШАПКА-----------------------------------------------*/
 header {
-	height: 1200px;
-	background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%),linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%),url(../img/header/sea.jpg);
+	height: 100vw;
+	/*background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%),linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%),url(../img/header/sea.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	filter: grayscale(20%);
-	font-weight: bold;
+	font-weight: bold;*/
+	background:
+	url(../img/content/Content.png),
+	url(../img/content/VG.png),
+    url(../img/content/MG.png), linear-gradient(330.24deg, rgba(231, 59, 6, 0) 31.06%, #0B1D26 108.93%),
+    url(../img/content/HG.png);
+	background-position:  top 65vw right,  top 39vw right,top 31vw right, top right, top right;
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-x, repeat-x;
 	
 
 }
@@ -99,6 +106,7 @@ line-height: 22px;
 color: #FFFFFF;
 
 transform: rotate(90deg);
+
 }
 .main-titile {
 	font-weight: 600;
@@ -129,6 +137,14 @@ justify-content: space-around;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-left: 100px;
+}
+
+.img_timeline {
+	display: flex;
+}
+.timeline {
+	margin-right: 20px;
 }
 .first-section, .second-section, .third-section{
     display: flex;
@@ -177,4 +193,23 @@ justify-content: space-around;
     line-height: 32px;
     color: #FFFFFF;
     white-space: pre-line;
+}
+.link {
+	display: flex;
+	font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+/* Accent */
+
+color: #FBD784;
+}
+.strelka {
+	width: 16px;
+height: 24px;
+left: 103px;
+top: 436px;
+margin-left: 10px;
+
 }
